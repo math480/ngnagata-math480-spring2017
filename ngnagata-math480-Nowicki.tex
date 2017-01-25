@@ -1,0 +1,76 @@
+% this TeX file provides an awesome example of how TeX will make super 
+% awesome tables, at the cost of your of what happens when you try to make a
+% table that is very complicated.
+% Originally turned in for Dr. Nico's Security Class
+\documentclass[11pt]{article}
+
+
+% Use wide margins, but not quite so wide as fullpage.sty
+\marginparwidth 0.5in 
+\oddsidemargin 0.25in 
+\evensidemargin 0.25in 
+\marginparsep 0.25in
+\topmargin 0.25in 
+\textwidth 6in \textheight 8 in
+% That's about enough definitions
+
+% multirow allows you to combine rows in columns
+\usepackage{multirow}
+% tabularx allows manual tweaking of column width
+\usepackage{tabularx}
+% longtable does better format for tables that span pages
+\usepackage{longtable}
+
+
+%===================================================================
+% Macros.
+%===================================================================
+\newcommand{\problem}[1]{\section{#1}}		% Problem.
+\newcommand{\new}[1]{{\em #1\/}}		    % New term (set in italics).
+\newcommand{\set}[1]{\{#1\}}			    % Set (as in \set{1,2,3})
+\newcommand{\setof}[2]{\{\,{#1}|~{#2}\,\}}	% Set ( as in \setof{x}{x > 0} )
+\newcommand{\C}{\mathbb{C}}	                % Complex numbers.
+\newcommand{\N}{\mathbb{N}}                 % Positive integers.
+\newcommand{\Q}{\mathbb{Q}}                 % Rationals.
+\newcommand{\R}{\mathbb{R}}                 % Reals.
+\newcommand{\Z}{\mathbb{Z}}                 % Integers.
+\newcommand{\compl}[1]{\overline{#1}}		% Complement of ...
+\newcommand{\powerset}[1]{\mathcal{P}(#1)}
+
+\newcommand{\rd}[1]{\textcolor{red}{#1}}
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+\newcommand{\gr}[1]{\textcolor{green}{#1}}
+
+
+\begin{document}
+
+\author{Natalie Nagata}
+\title{Math 480: Tomasz Nowicki}
+\maketitle
+
+
+
+\section*{Summary}
+% --------------------------------------------
+% Please write two paragraphs (or more, if you wish) about the speaker Tomasz Nowicki and bring it to class with you on Monday, January 23. 
+ 
+% Here are some questions you could answer:
+ 
+% What was the overall theme of the talk?
+% What were some of the main topics discussed? 
+% What was the style of presentation?  
+% Was the speaker "effective" or "successful"?  (Why? Why not?)
+% What did you like most/least about it?  
+% What did you get out of it?
+ 
+% If you didn't go to the talk, please write a sentence explaining why, and then write a paragraph discussing some of the points above more generally; e.g., What makes an "effective" math talk?  What style do you like better, slides or chalkboard?  Why?
+
+% -----------------------------------------------
+
+Tomasz Nowicki works (worked?) at IBM and his talk was about a combination of his background experience in academia and industry. His initial background was in noncommutative geometry but eventually his work shifted to studying dynamical systems. Dynamical system behavior can be described by functions with respect to time and/or with respect to other parameters of the system. Tomasz also talked about some common characteristics in dynamical systems. He mentioned that systems may exhibit asymptotic behavior. Over time it may converge to a discrete value or possibly converge to a periodic behavior around a cetain value.  He went on to describe some of his work at IBM that applied modeling and statistical tests to minimize problems/inefficiencies that IBM needed to be solved.\\
+
+\noindent Overall the talk was interesting but also had its shortcomings.  I appreciated that the talk covered some broad concepts important in modeling but also discussed what it's like to do applied math working in the industry sector.  There were some funny moments like his comments about using chalk vs slideshows to give presentations. What the talked lacked was adhering to the common advice of knowing your audience when giving presentations.  Generally presentations should be tailored to the type of audience you're talking to.  It's important to consider how experienced (or not) your audience is with the topic you're talking about. He partially fulfilled this aspect because he mentioned areas of math that were important in the work without writing lengthy mathematical expressions that would have been too esoteric for the class. But at times he did discuss topics that I imagine not everyone were completely familiar with (i.e. nonstochastic processes, measure theory convolution, bifurcations if someone wasn't familiar with dynamical systems).  Also the few math expressions he did include were specific to the problem he worked on at IBM but didn't give a clear explanation of what context the equations were used in.  Some suggestions are that he could have included simpler equations and talked in a more generalized way that would have been more accessible to the audience's background experience.
+
+
+
+\end{document}
